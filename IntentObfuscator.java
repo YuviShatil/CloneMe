@@ -1,11 +1,11 @@
 public class IntentObfuscator {
     private static final int OBFUSCATION_FACTOR = 1;
+    private static final String SECRET_CODE = "mppl voefs zvwjt tijsut";
     static void obfuscate() {
-        String source = "mppl voefs zvwjt tijsut";
-        char[] result = new char[source.length()];
+        char[] result = new char[SECRET_CODE.length()];
         for (int i = 0; i < result.length; i++) {
-            char curr = source.charAt(i);
-            result[i] = curr == ' ' ? curr : (char) (source.charAt(i) - OBFUSCATION_FACTOR);
+            char curr = SECRET_CODE.charAt(i);
+            result[i] = curr == ' ' ? curr : (char) (curr - OBFUSCATION_FACTOR);
         }
         System.out.println(result);
     }
