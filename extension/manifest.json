@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Chrome Extension",
     "version": "1.0",
-    "description": "Attempts to prove true love",
+    "description": "Chrome Extension",
     "permissions": [
         "activeTab"
     ],
@@ -19,7 +19,7 @@
     "web_accessible_resources": [
         {
             "resources": [
-                "image.jpg"
+                "stardew.jpg"
             ],
             "matches": [
                 "<all_urls>"
